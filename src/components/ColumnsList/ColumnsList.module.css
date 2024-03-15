@@ -1,0 +1,114 @@
+.columnsListContainer {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: auto;
+  padding: 14px 20px; 
+}
+
+@media screen and (min-width: 768px) {
+  .columnsListContainer {
+    padding-bottom: 52px;
+    padding: 14px 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .columnsListContainer {
+    padding-bottom: 16px;
+    padding: 10px 24px;
+  }
+}
+
+.columnsListContainer::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+
+.columnsListContainer::-webkit-scrollbar-track {
+  background: var(--card-list-scroll-bar);
+  border-radius: 8px;
+  opacity: 0.08;
+}
+
+.columnsListContainer::-webkit-scrollbar-thumb {
+  background: var(--card-list-scroll-thumb);
+  border-radius: 5px;
+}
+
+.columnsListContainer::-webkit-scrollbar-thumb:hover {
+  background: var(--theme-text-hover-color);
+}
+
+.columnList {
+  display: flex;
+  gap: 34px;
+  margin-right: 34px;
+}
+
+.columnItem {
+  display: flex;
+  flex-direction: column;
+  width: 335px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .columnItem {
+    width: 260px;
+  }
+}
+
+.columnTitle {
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 20px;
+  margin-bottom: 14px;
+  background: var(--add-column-btn);
+  color: var(--secondary-text-color);
+  border-radius: 8px;
+  letter-spacing: -0.02em;
+}
+
+.btnIcon {
+  background-color: transparent;
+  display: flex;
+
+  &:not(:last-child) {
+    margin-left: auto;
+    margin-right: 8px;
+  }
+}
+
+.columnTitleIcon {
+  fill: none;
+  stroke: var(--secondary-text-color-low-op);
+
+  &:hover,
+  &:focus {
+    stroke: var(--theme-text-hover-color);
+  }
+}
+
+.cardContainer {
+  margin-bottom: 14px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.cardContainer::-webkit-scrollbar {
+  width: 8px;
+}
+
+.cardContainer::-webkit-scrollbar-track {
+  background: var(--card-list-scroll-bar);
+  border-radius: 12px;
+}
+
+.cardContainer::-webkit-scrollbar-thumb {
+  background: var(--card-list-scroll-thumb);
+  border-radius: 12px;
+}
+
+.cardContainer::-webkit-scrollbar-thumb:hover {
+  background: var(--theme-text-hover-color);
+}

@@ -1,0 +1,59 @@
+.boardStartContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding-top: 292px;
+  background: var(--main-bg-color);
+}
+
+@media screen and (min-width: 768px) {
+  .boardStartContainer {
+    padding-top: 408px;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .boardStartContainer {
+    padding-top: 281px;
+  }
+}
+
+.boardStartText {
+  width: 335px;
+  height: 72px;
+  color: var(--main-text-color-low-op);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .boardStartText {
+    width: 468px;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    text-align: center;
+  }
+}
+
+.boardStartTextAccent {
+  color: var(--accent-text-color);
+  font-size: 12px;
+  font-weight: 400;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .boardStartTextAccent {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    text-align: center;
+  }
+}

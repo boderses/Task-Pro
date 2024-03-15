@@ -1,0 +1,68 @@
+.formTitle {
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    color: var(--secondary-text-color);
+    margin-bottom: 24px;
+}
+
+.formText {
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: -0.02em;
+    color: var(--secondary-text-color-low-op);
+    margin-bottom: 4px;
+}
+
+.inputForm {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid var(--accent-text-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 16px 0 rgba(22, 22, 22, 0.08);
+    background-color: var(--modal-input-bg);
+    outline: rgba(0, 0, 0, 0);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--secondary-text-color);
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    opacity: 0.4;
+}
+
+.inputForm:hover,
+.inputForm:focus {
+    opacity: 1;
+}
+
+.inputForm:valid {
+    opacity: 1;
+}
+
+.errorField {
+    position: absolute;
+    right: 3px;
+    top: -30px;
+    font-size: 12px;
+    color: var(--error-color);
+}
+
+.label {
+    position: relative;
+}
+
+.description {
+    composes: inputForm;
+    resize: none;
+    height: 154px;
+    margin-top: 14px;
+    margin-bottom: 24px;
+}
+
+.priorityWrapper {
+    margin-bottom: 14px;
+}
+
+.deadlineWrapper {
+    margin-bottom: 40px;
+}

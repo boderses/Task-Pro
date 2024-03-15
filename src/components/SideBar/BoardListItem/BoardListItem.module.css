@@ -1,0 +1,110 @@
+.boardItem {
+    display: flex;
+    justify-content: space-between;
+    height: 61px;
+    align-items: center;
+    padding: 20px 24px;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        top: 0;
+        right: 0;
+        width: 4px;
+        border-radius: 4px 0px 0px 4px;
+        border-right: 4px solid transparent;
+        transition: all var(--transition);
+    }
+
+    &:hover,
+    &:focus {
+        background-color: var(--active-navlink-bg);
+        cursor: pointer;
+
+        &::after {
+            border-right: 4px solid var(--logout-icon);
+        }
+
+        & .boardTitle {
+            color: var(--main-text-color);
+            z-index: 5;
+        }
+
+        & .boardIcon {
+            stroke: var(--main-text-color);
+        }
+
+        & .boardItemButtonsBlock {
+            display: flex;
+        }
+
+        & .boardBtn {
+            display: block;
+        }
+    }
+}
+
+.boardItemTitleBlock {
+    display: flex;
+    gap: 8px;
+}
+
+.boardIcon {
+    width: 18px;
+    height: 18px;
+    stroke-width: 1.50px;
+    stroke: var(--main-text-color-low-op);
+    fill: none;
+    transition: all var(--transition);
+    animation: scaleAndRotate 5s infinite alternate;
+}
+
+@keyframes scaleAndRotate {
+    0% {
+        transform: scale(1) rotate(0deg);
+    }
+
+    50% {
+        transform: scale(1.2) rotate(180deg);
+    }
+
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+.boardTitle {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: var(--main-text-color-low-op);
+    transition: all var(--transition);
+}
+
+.boardItemButtonsBlock {
+    display: flex;
+    gap: 8px;
+}
+
+.boardBtn {
+    display: none;
+    width: 16px;
+    height: 16px;
+    border: none;
+    background-color: transparent;
+}
+
+.boardBtnSvg {
+    width: 16px;
+    height: 16px;
+    stroke: var(--main-text-color);
+    fill: none;
+    transition: transform var(--transition);
+}
+
+.boardBtnSvg:hover,
+.boardBtnSvg:focus {
+    transform: scale(1.3);
+}

@@ -1,0 +1,91 @@
+.filterTitle {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 14px;
+  color: var(--secondary-text-color);
+}
+
+.filterWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 14px;
+  padding-top: 14px;
+}
+
+.filterContainer {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.textLeabel {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0px;
+  letter-spacing: -0.02em;
+  color: var(--theme-main-text-color);
+}
+
+.buttonLeabel {
+  color: var(--theme-main-text-color);
+  font-size: 12px;
+  font-weight: 400;
+
+  text-decoration: underline;
+
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.buttonLeabel:hover,
+.buttonLeabel:focus {
+  background: transparent;
+  color: var(--theme-text-hover-color);
+  transition: stroke var(--transition);
+  fill: none;
+}
+
+.leabelGroup {
+  display: flex;
+
+  gap: 8px;
+}
+
+.leabelGroup:not(:last-child) {
+  padding-bottom: 10px;
+}
+
+.leabelGroup:last-child {
+  padding-bottom: 20px;
+}
+
+.label {
+  appearance: none;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  outline: transparent;
+  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.label:checked {
+  outline: 1.8px solid var(--modal-windows-bg-color);
+  outline-offset: -3px;
+}
+
+.labeltext {
+  color: var(--theme-main-text-color);
+  letter-spacing: -0.02em;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.label:checked+.labeltext {
+  color: var(--secondary-text-color);
+  transition: stroke var(--transition);
+}
+
+.filterForm {
+  border-top: 1px solid var(--secondary-text-color-low-op);
+}

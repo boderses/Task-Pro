@@ -1,0 +1,76 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: var(--main-bg-color);
+  height: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+    height: 79px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 68px;
+  }
+}
+
+.projectTitle {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.36px;
+  margin: 0;
+  color: var(--secondary-text-color);
+}
+
+.buttonFilter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.28px;
+  color: var(--theme-main-text-color);
+  stroke: var(--theme-main-text-color);
+  fill: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.buttonFilter:hover,
+.buttonFilter:focus {
+  background: transparent;
+  color: var(--theme-text-hover-color);
+  stroke: var(--theme-text-hover-color);
+  transition: stroke var(--transition);
+  fill: none;
+}
+
+.modalStyle {
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  background-color: var(--modal-windows-bg-color);
+  border: 1px solid var(--modal-windows-border-color);
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.filterTitle {
+  padding-left: 8px;
+}
