@@ -1,5 +1,5 @@
 import axios from 'axios';
-axios.defaults.baseURL = 'https://project-team-6-backend.onrender.com';
+axios.defaults.baseURL = 'https://task-pro-88l4.onrender.com';
 
 //--------------------auth-------------------//
 export const setAuthHeader = token => {
