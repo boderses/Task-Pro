@@ -27,4 +27,4 @@ TaskPro is built using a variety of technologies to provide a robust and seamles
 
 ![Cloudinary](https://img.shields.io/badge/Cloudinary-blueviolet) ![Nodemailer](https://img.shields.io/badge/Nodemailer-yellow) ![Swagger UI Express](https://img.shields.io/badge/Swagger_UI_Express-orange)
 
-Happy task managing with Task Pro! 🚀
+
